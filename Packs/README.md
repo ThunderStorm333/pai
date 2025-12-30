@@ -86,6 +86,7 @@ For example, the Art Skill pack recommends having an extended conversation with 
 | [**kai-art-skill**](kai-art-skill.md) | 1.0.0 | Creativity | [Kai](../Bundles/Kai/) | Visual content generation with Excalidraw hand-drawn aesthetic - diagrams, comics, illustrations |
 | [**kai-agents-skill**](kai-agents-skill.md) | 1.0.0 | Delegation | [Kai](../Bundles/Kai/) | Dynamic agent composition - create custom agents with unique personalities, voices, and trait combinations |
 | [**kai-prompting-skill**](kai-prompting-skill.md) | 1.0.0 | Methodology | [Kai](../Bundles/Kai/) | Meta-prompting system with Handlebars templates, Claude 4.x best practices, and the Ultimate Prompt Template |
+| [**kai-input-enhancer**](kai-input-enhancer.md) | 1.0.0 | Productivity | [Kai](../Bundles/Kai/) | Automatic input enhancement - classifies requests, adds chain-of-thought, composes agent teams for complex tasks |
 
 ---
 
@@ -100,8 +101,9 @@ Packs have dependencies. Install in this order:
 4. kai-prompting-skill        ← Depends on core-install
 5. kai-voice-system           ← Depends on hooks, core-install
 6. kai-agents-skill           ← Depends on core-install, optional voice-system
-7. kai-art-skill              ← Depends on core-install
-8. kai-observability-server   ← Optional, depends on hooks
+7. kai-input-enhancer         ← Depends on hooks, core-install, prompting-skill
+8. kai-art-skill              ← Depends on core-install
+9. kai-observability-server   ← Optional, depends on hooks
 ```
 
 **Or install the complete [Kai Bundle](../Bundles/Kai/)** which handles ordering automatically.

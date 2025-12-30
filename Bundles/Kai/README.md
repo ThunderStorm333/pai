@@ -177,6 +177,8 @@ When fully installed, the Kai bundle gives you a number of features that elevate
 | 2 | [kai-history-system](../../Packs/kai-history-system.md) | Memory and capture | Hooks |
 | 3 | [kai-core-install](../../Packs/kai-core-install.md) | Skills + Identity + Architecture | Hooks, History |
 | 4 | [kai-voice-system](../../Packs/kai-voice-system.md) | Voice notifications | Hooks, Core |
+| 5 | [kai-prompting-skill](../../Packs/kai-prompting-skill.md) | Meta-prompting templates | Core |
+| 6 | [kai-input-enhancer](../../Packs/kai-input-enhancer.md) | Automatic input enhancement | Hooks, Core, Prompting |
 
 ### Why Order Matters
 
@@ -184,6 +186,8 @@ When fully installed, the Kai bundle gives you a number of features that elevate
 - **History** uses hooks to capture events and context
 - **Core Install** provides skill routing, identity framework, and architecture tracking (combines former skill-system and identity packs)
 - **Voice** uses hooks for completion events and integrates with the response format from Core
+- **Prompting** provides meta-prompting templates and Standards.md principles
+- **Input Enhancer** uses hooks for UserPromptSubmit, relies on prompting templates for CoT patterns
 
 ### Pack Availability
 
@@ -193,6 +197,8 @@ When fully installed, the Kai bundle gives you a number of features that elevate
 | kai-history-system | **Available** |
 | kai-core-install | **Available** (NEW - replaces kai-skill-system + kai-identity) |
 | kai-voice-system | **Available** |
+| kai-prompting-skill | **Available** |
+| kai-input-enhancer | **Available** (NEW - automatic input enhancement) |
 
 *All Packs are now available. Install in order to get the complete Kai experience.*
 
