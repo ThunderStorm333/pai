@@ -1613,7 +1613,9 @@ function formatSystemReminder(
 
   const lines: string[] = [];
   lines.push('<system-reminder>');
-  lines.push('[InputEnhancer] Analysis Complete');
+  lines.push('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');
+  lines.push('✨ InputEnhancer Activated');
+  lines.push('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');
   lines.push('');
 
   // Plan mode indicator
@@ -2883,7 +2885,9 @@ User: "fix the TypeError in auth.ts line 45"
 [Hook outputs system-reminder]
 
 <system-reminder>
-[InputEnhancer] Analysis Complete
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+✨ InputEnhancer Activated
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 Type: debug
 Confidence: 92%
@@ -2922,7 +2926,9 @@ User: "audit the API for security vulnerabilities"
 [Hook outputs system-reminder]
 
 <system-reminder>
-[InputEnhancer] Analysis Complete
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+✨ InputEnhancer Activated
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 Type: review
 Confidence: 87%
@@ -2986,7 +2992,9 @@ User: "fix it"
 [Hook outputs system-reminder with gaps detected]
 
 <system-reminder>
-[InputEnhancer] Analysis Complete
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+✨ InputEnhancer Activated
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 Type: debug
 Confidence: 45%
@@ -3038,7 +3046,9 @@ User: "add user authentication" (while plan mode is active)
 [Hook detects plan mode, adjusts enhancement]
 
 <system-reminder>
-[InputEnhancer] Analysis Complete
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+✨ InputEnhancer Activated
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 Mode: PLAN MODE (exploring)
 Focus: research and exploration

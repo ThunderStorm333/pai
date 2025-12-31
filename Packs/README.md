@@ -87,6 +87,8 @@ For example, the Art Skill pack recommends having an extended conversation with 
 | [**kai-agents-skill**](kai-agents-skill.md) | 1.0.0 | Delegation | [Kai](../Bundles/Kai/) | Dynamic agent composition - create custom agents with unique personalities, voices, and trait combinations |
 | [**kai-prompting-skill**](kai-prompting-skill.md) | 1.0.0 | Methodology | [Kai](../Bundles/Kai/) | Meta-prompting system with Handlebars templates, Claude 4.x best practices, and the Ultimate Prompt Template |
 | [**kai-input-enhancer**](kai-input-enhancer.md) | 1.0.0 | Productivity | [Kai](../Bundles/Kai/) | Automatic input enhancement - classifies requests, adds chain-of-thought, composes agent teams for complex tasks |
+| [**kai-skill-suggester**](kai-skill-suggester.md) | 1.0.0 | Discovery | [Kai](../Bundles/Kai/) | History-driven skill discovery - mines usage patterns to suggest new skills and updates to existing skills |
+| [**kai-research-skill**](kai-research-skill.md) | 1.0.0 | Research | [Kai](../Bundles/Kai/) | Token-efficient research routing - uses Gemini CLI and Perplexity API to save Claude tokens on lookups |
 
 ---
 
@@ -103,7 +105,9 @@ Packs have dependencies. Install in this order:
 6. kai-agents-skill           ← Depends on core-install, optional voice-system
 7. kai-input-enhancer         ← Depends on hooks, core-install, prompting-skill
 8. kai-art-skill              ← Depends on core-install
-9. kai-observability-server   ← Optional, depends on hooks
+9. kai-research-skill         ← Depends on core-install, optional agents-skill
+10. kai-skill-suggester       ← Depends on core-install, history-system
+11. kai-observability-server  ← Optional, depends on hooks
 ```
 
 **Or install the complete [Kai Bundle](../Bundles/Kai/)** which handles ordering automatically.
@@ -162,6 +166,8 @@ See [.env.example](../.env.example) for the complete list of supported variables
 | **Delegation** | Agent orchestration and parallel execution | Agents Skill |
 | **Creativity** | Visual and creative content generation | Art Skill |
 | **Methodology** | Prompt engineering and meta-prompting | Prompting Skill |
+| **Discovery** | Pattern mining and skill recommendations | Skill Suggester |
+| **Research** | Token-efficient external knowledge retrieval | Research Skill |
 
 ---
 
