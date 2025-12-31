@@ -22,7 +22,7 @@
 
 <br/>
 
-**Getting Started:** [What is PAI?](#what-is-pai) · [Quick Start](#-quick-start) · [14 Principles](#the-14-founding-principles)
+**Getting Started:** [What is PAI?](#what-is-pai) · [Quick Start](#-quick-start) · [15 Principles](#the-15-founding-principles)
 
 **Packs & Bundles:** [Browse Packs](#-available-packs) · [Browse Bundles](#-available-bundles) · [How Packs Work](#-how-pai-packs-work) · [v1 → v2 Journey](#the-journey-pai-v1x--v20)
 
@@ -38,92 +38,144 @@
 
 ---
 
-# The best AI in the world should be available to everyone
+# An AI system for pursuing your goals
 
 </div>
 
-Right now the most powerful AI setups are being built inside companies for efficiency and profits.
+The most powerful AI setups are being built inside companies. That's fine, but I think technology should serve humans—not the other way around.
 
-That's all good, but I think the purpose of technology is to serve humans—not the other way around. These new AI frameworks should be available to everyone, including people not in technology, so that regular people can use it to help them flourish.
+PAI is open-source infrastructure for building your own AI system. One that knows your goals, learns from your history, and gets better at helping you over time. Not a generic assistant. *Your* assistant, working on *your* problems.
 
-That's what PAI is. It's the foundation for building a Personal AI System that understands your larger goals and context, gets better over time, and that works for *you* because it's *yours*. Not some generic chatbot. Not some common assistant. A full platform for magnifying yourself and your impact on the world.
+But here's what makes PAI different: underneath the personal layer is something more fundamental.
 
 ---
 
 ## What is PAI?
 
-**PAI (Personal AI Infrastructure)** is a framework for building your own AI-powered operating system. It's built on top of AI coding agents like Claude Code, but personalized to *you* - your goals, your workflows, your context.
+**PAI (Personal AI Infrastructure)** started as a framework for building personalized AI assistants. But in building it, we noticed something.
 
-When you build a PAI system, you're creating what I call your own "Kai" - a personalized AI assistant that knows your preferences, remembers your history, and has specialized skills for the things you do most.
+Every goal—whether it's fixing a bug, writing a book, building a company, or figuring out what to do with your life—follows the same basic structure. There's where you are. There's where you want to be. And there's the process of getting there.
 
-**PAI is:**
-- **A philosophy** - The 14 Founding Principles that guide how to build AI systems
-- **An architecture** - Skills, Hooks, History, Agents, and MCP integrations
-- **A community** - Open-source packs that anyone can install or contribute
+We didn't invent this pattern. Evolution uses it. Science uses it. Every successful human endeavor uses it. We just made it explicit and built tools around it.
+
+**PAI is three things:**
+- **A universal pattern** - Two nested loops that apply to any goal, at any scale
+- **Personal infrastructure** - Skills, memory, and context that make AI actually useful for *your* life
+- **Open-source packs** - Battle-tested capabilities anyone can install or contribute
 
 ---
 
-## The 14 Founding Principles
+## The Two Loops
+
+At the foundation of PAI is a simple observation: all progress—personal, professional, civilizational—follows the same two nested loops.
+
+### The Outer Loop: Where You Are → Where You Want to Be
+
+[![The Universal Algorithm](./pai-outer-loop-current-to-desired.png)](./pai-outer-loop-current-to-desired.png)
+
+This is it. The whole game. You have a current state. You have a desired state. Everything else is just figuring out how to close the gap.
+
+This pattern works at every scale:
+- **Fixing a typo** - Current: wrong word. Desired: right word.
+- **Learning a skill** - Current: can't do it. Desired: can do it.
+- **Building a company** - Current: idea. Desired: profitable business.
+- **Human flourishing** - Current: wherever you are. Desired: the best version of your life.
+
+The pattern doesn't change. Only the scale does.
+
+### The Inner Loop: The Scientific Method
+
+[![The Inner Loop](./pai-inner-loop-7-phases.png)](./pai-inner-loop-7-phases.png)
+
+*How* do you actually move from current to desired? Through iteration. Specifically, through the scientific method—the most reliable process humans have ever discovered for making progress.
+
+PAI implements this as a 7-phase cycle that every workflow follows:
+
+| Phase | What You Do |
+|-------|-------------|
+| **OBSERVE** | Look around. Gather context. Understand where you actually are. |
+| **THINK** | Generate ideas. What might work? Come up with hypotheses. |
+| **PLAN** | Pick an approach. Design the experiment. |
+| **BUILD** | Define what success looks like. How will you know if it worked? |
+| **EXECUTE** | Do the thing. Run the plan. |
+| **VERIFY** | Check the results against your criteria. Did it work? |
+| **LEARN** | Harvest insights. What did you learn? Then iterate or complete. |
+
+The crucial insight: **verifiability is everything**. If you can't tell whether you succeeded, you can't improve. Most people skip the VERIFY step. They try things, sort of check if it worked, and move on. The scientific method's power comes from actually measuring results and learning from them—especially from failures.
+
+Every PAI skill, every workflow, every task implements these two loops. The outer loop defines *what* you're pursuing. The inner loop defines *how* you pursue it. Together, they're a universal engine for making progress on anything.
+
+### Where Are You on the Journey?
+
+To understand your current capabilities and what to build next, see the **[Personal AI Maturity Model (PAIMM)](https://danielmiessler.com/blog/personal-ai-maturity-model)**—a 9-tier progression from basic chatbots to a full AI companion that knows you, remembers everything, and actively helps you pursue your goals.
+
+---
+
+## The 15 Founding Principles
 
 These principles guide how PAI systems are designed and built:
 
-[![PAI System Principles](https://danielmiessler.com/images/pai-system-principles.png)](https://danielmiessler.com/blog/personal-ai-infrastructure)
+[![PAI System Principles](./pai-system-principles.png)](https://danielmiessler.com/blog/personal-ai-infrastructure)
 
 **[Read the full breakdown of each principle →](https://danielmiessler.com/blog/personal-ai-infrastructure)**
 
-#### 1. Clear Thinking + Prompting is King
+#### 1. The Foundational Algorithm
+[![Foundational Algorithm](./pai-foundational-algorithm.png)](https://danielmiessler.com/blog/personal-ai-infrastructure)
+PAI is built around a universal pattern: **Current State → Desired State** via verifiable iteration. This is the outer loop. The inner loop is the 7-phase scientific method (OBSERVE → THINK → PLAN → BUILD → EXECUTE → VERIFY → LEARN). The critical insight: verifiability is everything. If you can't measure whether you reached the desired state, you're just guessing.
+
+#### 2. Clear Thinking + Prompting is King
 [![Clear Thinking](https://danielmiessler.com/images/pai-principle-01-clear-thinking.png)](https://danielmiessler.com/blog/personal-ai-infrastructure)
 Good prompts come from clear thinking about what you actually need. Spend more time clarifying the problem than writing the prompt.
 
-#### 2. Scaffolding > Model
+#### 3. Scaffolding > Model
 [![Scaffolding](https://danielmiessler.com/images/pai-principle-02-scaffolding.png)](https://danielmiessler.com/blog/personal-ai-infrastructure)
 The system architecture matters more than which model you use. Good scaffolding makes even smaller models perform well.
 
-#### 3. As Deterministic as Possible
+#### 4. As Deterministic as Possible
 [![Deterministic](https://danielmiessler.com/images/pai-principle-03-deterministic.png)](https://danielmiessler.com/blog/personal-ai-infrastructure)
 AI is probabilistic, but your infrastructure shouldn't be. Use templates and consistent patterns.
 
-#### 4. Code Before Prompts
+#### 5. Code Before Prompts
 [![Code Before Prompts](https://danielmiessler.com/images/pai-principle-04-code-before-prompts.png)](https://danielmiessler.com/blog/personal-ai-infrastructure)
 If you can solve it with a bash script, don't use AI. Only use AI for the parts that actually need intelligence.
 
-#### 5. Spec / Test / Evals First
+#### 6. Spec / Test / Evals First
 [![Spec Test Evals](https://danielmiessler.com/images/pai-principle-05-spec-test-evals.png)](https://danielmiessler.com/blog/personal-ai-infrastructure)
 Before building anything complex, write specifications and tests. Use evals to measure if the system is actually working.
 
-#### 6. UNIX Philosophy (Modular Tooling)
+#### 7. UNIX Philosophy (Modular Tooling)
 [![UNIX Philosophy](https://danielmiessler.com/images/pai-principle-06-unix-philosophy.png)](https://danielmiessler.com/blog/personal-ai-infrastructure)
 Do one thing well. Make tools composable. Use text interfaces.
 
-#### 7. ENG / SRE Principles
+#### 8. ENG / SRE Principles
 [![ENG SRE Principles](https://danielmiessler.com/images/pai-principle-07-eng-sre.png)](https://danielmiessler.com/blog/personal-ai-infrastructure)
 Treat your AI infrastructure like production software: version control, automation, monitoring, rollback plans.
 
-#### 8. CLI as Interface
+#### 9. CLI as Interface
 [![CLI Interface](https://danielmiessler.com/images/pai-principle-08-cli-interface.png)](https://danielmiessler.com/blog/personal-ai-infrastructure)
 Command-line interfaces are faster, more scriptable, and more reliable than GUIs.
 
-#### 9. Goal → Code → CLI → Prompts → Agents
+#### 10. Goal → Code → CLI → Prompts → Agents
 [![Goal to Agents](https://danielmiessler.com/images/pai-principle-09-goal-to-agents.png)](https://danielmiessler.com/blog/personal-ai-infrastructure)
 The decision hierarchy: clarify the goal first, then try code, then CLI tools, then prompts, and only then agents.
 
-#### 10. Meta / Self Update System
+#### 11. Meta / Self Update System
 [![Meta Update](https://danielmiessler.com/images/pai-principle-10-meta-update.png)](https://danielmiessler.com/blog/personal-ai-infrastructure)
 The system should be able to modify itself. Encode learnings so you never forget.
 
-#### 11. Custom Skill Management
+#### 12. Custom Skill Management
 [![Skill Management](https://danielmiessler.com/images/pai-principle-11-skill-management.png)](https://danielmiessler.com/blog/personal-ai-infrastructure)
 Skills are the foundation of personalization - modular capabilities that route intelligently.
 
-#### 12. Custom History System
+#### 13. Custom History System
 [![History System](https://danielmiessler.com/images/pai-principle-12-history-system.png)](https://danielmiessler.com/blog/personal-ai-infrastructure)
 Everything worth knowing gets captured. History feeds back into context for future sessions.
 
-#### 13. Custom Agent Personalities / Voices
+#### 14. Custom Agent Personalities / Voices
 [![Agent Personalities](https://danielmiessler.com/images/pai-principle-13-agent-personalities.png)](https://danielmiessler.com/blog/personal-ai-infrastructure)
 Different work needs different approaches. Specialized agents with unique personalities and voices.
 
-#### 14. Science as Cognitive Loop
+#### 15. Science as Cognitive Loop
 The meta-principle: Hypothesis → Experiment → Measure → Iterate. Every decision follows this pattern.
 
 ---
@@ -286,6 +338,58 @@ Packs are self-contained markdown files. You can:
 - Use it as reference documentation
 
 **No forced structure. No mandatory setup. Take what's useful, leave the rest.**
+
+---
+
+## 📂 Understanding PAI_DIR
+
+The `PAI_DIR` environment variable is the **single source of truth** for where your PAI installation lives.
+
+### What is PAI_DIR?
+
+`PAI_DIR` points to the directory where your personal AI infrastructure is installed - this is where skills, hooks, history, and configuration files live.
+
+### Two Different Things
+
+| Concept | Path | Purpose |
+|---------|------|---------|
+| **PAI Repository** | Where you cloned `git clone https://github.com/danielmiessler/PAI.git` | Source code, packs, templates - read-only reference |
+| **PAI Installation** (`PAI_DIR`) | `~/.claude` (default) or your custom location | Your active installation - skills, hooks, history, config |
+
+The repository is like a cookbook. Your installation is your actual kitchen.
+
+### Default Behavior
+
+If `PAI_DIR` is not set, PAI tools and packs default to `~/.claude`:
+- This is the standard Claude Code configuration directory
+- Works seamlessly with Claude Code out of the box
+- Recommended for most users
+
+### When to Use a Custom PAI_DIR
+
+Set a custom `PAI_DIR` if you:
+- Use a different AI coding assistant (Cursor, Windsurf, OpenCode)
+- Want to keep PAI separate from Claude Code's config
+- Are testing or developing packs
+- Have multiple PAI installations
+
+### Setting PAI_DIR
+
+**In your shell profile** (`~/.zshrc` or `~/.bashrc`):
+```bash
+export PAI_DIR="$HOME/.claude"  # Default - Claude Code location
+# OR
+export PAI_DIR="$HOME/.config/pai"  # Custom location
+```
+
+### How Tools Resolve PAI_DIR
+
+PAI tools use this resolution order:
+1. `process.env.PAI_DIR` - Explicit setting (highest priority)
+2. `process.env.PAI_HOME` - Legacy/alternate variable
+3. `~/.claude` - Default fallback
+
+This means: if you set `PAI_DIR`, it takes precedence. If not, it defaults to Claude Code's standard location.
 
 ---
 
